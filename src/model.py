@@ -8,10 +8,12 @@ class ContentBasedRecommender:
         with open(sim_matrix_path, "rb") as f:
             self.sim_matrix = pickle.load(f)
 
-    def get_recommendations(self, title: str, top_n: int=5) -> DataFrame:
+    def get_recommendations(self, title: str, top_n: int=5): #-> #DataFrame:
         idx = self.indices[title]
-        sim_scores = list(enumerate(self.sim_matrix[idx]))
+        # sim_scores = list(enumerate(self.sim_matrix[idx]))
+        sim_row = self.sim_matrix[idx].toarray().flatten()
+        sim_scores = list(enumerate(sim_row))
         sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)
         sim_scores = sim_scores[1 : top_n + 1]
         movie_indices = [i[0] for i in sim_scores]
-        return self.df.loc[movie_indices][["title", "vote_average", "overview"]]
+        return self.df.iloc[movie_indices][["title", "vote_average", "overview"]]
