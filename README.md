@@ -20,46 +20,28 @@
 ---
 
 ## Структура Проекта
-
+```
 RecommendationSystem/
-
 ├── .gradio/
-
 ├── .venv/                           # Виртуальное окружение
-
 ├── data/
-
 │   ├── TMDB_movie_dataset_v11.csv   # Исходный датасет
-
 │   ├── movies_cleaned.csv           # Датасет после EDA
-
 │   ├── movies_with_genres.csv       # После классификации жанров
-
 │   ├── movies_with_emotions.csv     # Итоговый датасет с эмоциональными оценками
-
 │   └── tagged_overview.txt          # Файл для создания эмбеддингов (imdb_id + overview)
-
 ├── imgs/
-
 │   └── not_found.png                # Заглушка для постеров
-
 ├── src/                             # Рабочие Jupyter-ноутбуки и переменные окружения
-
 │   ├── .env
-
 │   ├── EDA.ipynb                    # Разведочный анализ данных
-
 │   ├── sentiment_analysis.ipynb     # Анализ эмоционального тона
-
 │   ├── text_classification.ipynb    # Классификация жанров (Zero-shot)
-
 │   └── vector_search.ipynb          # Создание векторной базы данных
-
 ├── .gitignore                       # Файлы, исключаемые из системы контроля версий
-
 ├── dashboard.py                     # Основной файл приложения Gradio (Система рекомендаций)
-
 └── requirements.txt                 # Список зависимостей Python
+```
 
 ---
 
