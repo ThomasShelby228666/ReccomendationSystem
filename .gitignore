@@ -1,4 +1,6 @@
 .idea
 .venv
-.data
+/data
+/imgs
 .env
+.gradio
