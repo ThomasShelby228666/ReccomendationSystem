@@ -81,7 +81,7 @@ RecommendationSystem/
 Для получения локальной копии проекта используйте команду `git clone`. Замените `<ссылка_на_репозиторий>` на фактическую ссылку, где размещён ваш проект.
 
 ```bash
-git clone <ссылка_на_репозиторий>
+git clone https://github.com/ThomasShelby228666/ReccomendationSystem.git
 cd RecommendationSystem/
 ```
 
