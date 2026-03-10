@@ -55,7 +55,7 @@ RecommendationSystem/
     * Сохранение: `movies_cleaned.csv`.
 2.  **`text_classification.ipynb`**:
     * Упрощение и балансировка жанров.
-    * Использование Zero-shot классификатора (`facebook/bart-large-mnli`) для автоматического определения жанров.
+    * Использование zero-shot классификатора (`facebook/bart-large-mnli`) для автоматического определения жанров.
     * Оценка качества классификации и заполнение пропущенных жанров.
     * Сохранение: `movies_with_genres.csv`.
 3.  **`sentiment_analysis.ipynb`**:
